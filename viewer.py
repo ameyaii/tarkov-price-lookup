@@ -27,7 +27,7 @@ def smal():
     item = item.split(remove2, 1)[0]
     item = item.split(remove3, 1)[0]
     item = item.split(remove4, 1)[0]
-    balls = requests.get('https://tarkov-market.com/api/v1/item?q={}&x-api-key=be7bTOQPmVkk3uva'.format(item))
+    balls = requests.get('https://tarkov-market.com/api/v1/item?q={}&x-api-key='.format(item))
     item = balls.json()
     item = str(item)
     if "[]" in item:
