@@ -1,6 +1,6 @@
 import requests
 word = ('shared bedroom')
-x = requests.get('https://tarkov-market.com/api/v1/item?q={}&x-api-key=be7bTOQPmVkk3uva'.format(word))
+x = requests.get('https://tarkov-market.com/api/v1/item?q={}&x-api-key='.format(word))
 item = x.json()
 item = str(item)
 item = (item.split(","))
